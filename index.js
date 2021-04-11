@@ -54,8 +54,6 @@ class CountdownTimer {
 
   start() {
     const interval = setInterval(() => {
-      this.targetDate -= 1000;
-
       if (this.targetDate <= 0) {
         this.targetDate = 0;
         clearInterval(interval);
